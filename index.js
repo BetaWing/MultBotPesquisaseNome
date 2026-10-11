@@ -1,3 +1,4 @@
+```javascript
 // ==UserScript==
 // @name         MultBot
 // @author       NotXina
@@ -36,7 +37,7 @@
     }
     uw.__multbot_index_running__ = true;
 
-    const BASE_URL = 'https://raw.githubusercontent.com/BetaWing/MultBotPesquisaeNome/main/Modules';
+    const BASE_URL = 'https://raw.githubusercontent.com/BetaWing/MultBotPesquisaseNome/main/Modules';
     const MAX_RETRIES = 2;
     const TOTAL_ATTEMPTS = MAX_RETRIES + 1;
     const FETCH_TIMEOUT_MS = 15000;
@@ -83,6 +84,7 @@
             console.error('[MultBot] Verifique a conexão e recarregue a página.');
             return;
         }
+
         /* Segunda trava, agora bem na hora de injetar de fato no DOM
            real da pagina - mesmo que o guard la em cima (uw.__multbot_index_running__)
            tenha falhado por algum motivo (ex: sandbox reiniciado sem
@@ -220,3 +222,4 @@
 
     waitForGame();
 })();
+```

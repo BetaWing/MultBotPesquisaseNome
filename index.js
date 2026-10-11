@@ -1,4 +1,3 @@
-```javascript
 // ==UserScript==
 // @name         MultBot
 // @author       NotXina
@@ -84,7 +83,6 @@
             console.error('[MultBot] Verifique a conexão e recarregue a página.');
             return;
         }
-
         /* Segunda trava, agora bem na hora de injetar de fato no DOM
            real da pagina - mesmo que o guard la em cima (uw.__multbot_index_running__)
            tenha falhado por algum motivo (ex: sandbox reiniciado sem
@@ -222,4 +220,3 @@
 
     waitForGame();
 })();
-```
